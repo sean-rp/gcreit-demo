@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <base target="_parent">
+    <title>Storybook</title>
+    <link rel="stylesheet" type="text/css" href="/assets/nuveenstatic/css/global.css">
+<!-- We need to load jQuery separately since morning star and TEY calculator require it globally -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- In Production global.js must be loaded after TEY and Morning star -->
+<script src="/assets/nuveenstatic/js/global.js"></script>
+
+<!-- Do Not include in production -->
+<link rel="stylesheet" href="/assets/nuveenstatic/css/styleguide.css">
+<!-- <script defer src="/assets/nuveenstatic/js/styleguide.js"></script> -->
+<!-- Do Not include in production -->
+
+<script>
+  $(document).ready(function() {
+    $('body').append('<main><div class="styleguide-grid"><div class="styleguide-grid__visual-container"><div class="styleguide-grid__visual"></div></div></div></main>');
+  });
+</script>
+</head>
+<body>
+    <storybook-dynamic-app-root></storybook-dynamic-app-root>
+<script type="text/javascript" src="static/preview.42265d9405b8e39d614e.bundle.js"></script><script type="text/javascript" src="static/styles.a06aa0b4ce3f6c141b7d.bundle.js"></script></body>
+</html>
